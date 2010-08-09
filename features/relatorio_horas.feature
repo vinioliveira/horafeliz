@@ -1,9 +1,10 @@
 Feature: Relatorio de Horas
 
+    Como usuario eu quero visualizar minhas horas registradas.
+
     Scenario: Visualizando minhas horas de dia
         Given Exista o usuario de login "horafeliz"
-        And ele tem registrado as horas para o dia "2010-01-01" com entrada "08:00" e saida "12:00"
-        And entrada "13:00" e saida "18:00"
+        And ele tem registrado as horas para o dia "2010-01-01" com entrada "08:00" e saida "12:00" e entrada "13:00" e saida "18:00"
         When o usuario "horafeliz" acessa o seu relatorio de horas
         Then ele visualiza as suas horas com apenas o dia "2010-01-01"
         And com "4" horas para o intervalo de "08:00" a "12:00"
