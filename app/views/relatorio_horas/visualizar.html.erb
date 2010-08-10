@@ -1,17 +1,32 @@
 <h1>RelatorioHoras#visualizar</h1>
 <p>Find me in app/views/relatorio_horas/visualizar.html.erb</p>
 <div id="horas">
+  <pre>
+  <%=@semanas.inspect%>
+  </pre>
   <h1>Semana 1</h1>
-  <table>
-    <tr> <th> CheckIn </th> <th> ChekOut </th> <tr>
+  <table border="1" class="semana">
     <tr>
-      <td>
-       Dia 1
-      </td>
-      <td>
+      <th></th>
+      <th>CheckIn</th>
+      <th>ChekOut</th>
+      <th>Total periodo</th>
+      <th>Total dia</th>
+     <tr>
 
-      </td>
+    <tr id="intervalo">
+      <td id="dia" rowspan="2">2010-01-01</td>
+      <td id="checkin">08:00</td>
+      <td id="checkout">12:00</td>
+      <td id="total"><span id="total_hora">4</span></td>
+      <td id="total_dia" rowspan="2">9</td>
      </tr>
+     <tr id="intervalo">
+      <td id="checkin">13:00</td>
+      <td id="checkout">18:00</td>
+      <td id="total"><span id="total_hora">5</span></td>
+     </tr>
+
    </table>
 </div>
 

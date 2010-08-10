@@ -212,3 +212,64 @@ Migrating to ChangeTypeFieldHora (20100809212625)
   [4;35;1mHora Create (19.7ms)[0m   [0mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKIN', '2010-08-09 21:29:56', '2010-08-09 21:29:56', '-4712-01-01 00:00:00', NULL)[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
   [4;35;1mSQL (73.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-10 20:54:40', '2010-08-10 20:54:40', 'test', 'test')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (64.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHora Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mHora Create (0.3ms)[0m   [0mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKIN', '2010-08-10 20:54:40', '2010-08-10 20:54:40', '-4712-01-01 00:00:00', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (107.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+Rendering relatorio_horas/visualizar
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RelatorioHorasController#visualizar (for 0.0.0.0 at 2010-08-10 17:54:40) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/relatorio_horas/visualizar]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-10 20:55:38', '2010-08-10 20:55:38', 'test', 'test')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (92.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHora Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mHora Create (0.3ms)[0m   [0mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKIN', '2010-08-10 20:55:38', '2010-08-10 20:55:38', '-4712-01-01 00:00:00', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (97.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+Rendering relatorio_horas/visualizar
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RelatorioHorasController#visualizar (for 0.0.0.0 at 2010-08-10 17:55:38) [GET]
+  [4;35;1mHora Load (0.3ms)[0m   [0mSELECT * FROM `horas` [0m
+Rendering relatorio_horas/visualizar
+Completed in 5ms (View: 0, DB: 1) | 200 OK [http://test.host/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m

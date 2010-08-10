@@ -11,7 +11,11 @@ describe RelatorioHorasController do
   describe "GET 'visualizar'" do
     it "should be successful" do
       get 'visualizar'
+      assigns[:horas].should_not == nil
       response.should be_success
     end
   end
+
+
 end
+

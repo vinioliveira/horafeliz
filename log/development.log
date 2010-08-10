@@ -432,3 +432,1102 @@ Migrating to ChangeTypeFieldHora (20100809212625)
   [4;36;1mSQL (52.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
   [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
   [4;36;1mSQL (66.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (128.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (37.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:14:22) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 83ms (View: 80, DB: 166) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:15:29) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:15:31) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:15:31) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:15:45) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:16:14) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:16:28) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (228.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (415.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (24.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (729.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (182.0ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (164.8ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (143.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (347.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (98.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (77.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (77.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (247.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (147.9ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (312.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (217.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (159.0ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.4ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (134.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (279.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (212.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (159.9ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.3ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (303.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (252.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (166.0ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (131.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (290.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (76.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (306.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (242.2ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (231.4ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (200.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (929.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (76.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (100.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (230.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (118.6ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (153.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (110.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (303.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (231.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (117.4ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.4ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (303.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (223.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.9ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.6ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (323.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (74.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (396.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (153.2ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (133.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (259.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (211.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.1ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.9ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (301.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (293.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (183.5ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (221.6ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (245.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (449.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (84.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (102.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (122.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (223.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (147.6ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (133.1ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (301.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (74.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (182.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.8ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.3ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (88.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (268.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (51.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (224.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.3ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (131.1ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (269.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (88.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (89.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (77.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (212.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (140.0ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (98.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (281.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (172.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (134.2ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.1ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (101.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (279.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (65.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (56.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (54.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (234.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (190.8ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (131.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (99.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (327.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (165.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (127.6ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.4ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (279.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (186.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (152.3ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.4ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (123.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (301.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (44.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (188.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.1ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (290.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (74.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (66.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (184.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (220.5ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (197.1ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (223.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (462.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (61.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (92.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (78.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (219.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (156.1ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (131.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (292.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (74.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (66.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:47:56) [GET]
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (298.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (137.2ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (155.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (280.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (63.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (44.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (200.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (159.6ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (282.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (74.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (77.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (235.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `horafeliz_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `horafeliz_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (136.9ms)[0m   [0mCREATE TABLE `horas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.2ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (110.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (268.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mSQL (55.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (55.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#visualizar (for 127.0.0.1 at 2010-08-10 18:41:32) [GET]
+
+SyntaxError (/home/verto/Development/workspace/ruby/horafeliz/app/controllers/relatorio_horas_controller.rb:35: syntax error, unexpected tASSOC, expecting kEND
+      dia[:checkin] => hora
+                      ^
+/home/verto/Development/workspace/ruby/horafeliz/app/controllers/relatorio_horas_controller.rb:37: syntax error, unexpected tASSOC, expecting kEND
+      dia[:checkout] => hora
+                       ^):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.8ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:41:50) [GET]
+  [4;36;1mHora Load (0.5ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined local variable or method `horas' for #<ActionView::Base:0xb709655c>) on line #16 of app/views/relatorio_horas/visualizar.html.erb:
+13:      <tr>
+14: 
+15:     <tr id="intervalo">
+16:       <td id="dia" rowspan="<%= horas.data %>2">2010-01-01</td>
+17:       <td id="checkin">08:00</td>
+18:       <td id="checkout">12:00</td>
+19:       <td id="total"><span id="total_hora">4</span></td>
+
+    app/views/relatorio_horas/visualizar.html.erb:16
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:42:11) [GET]
+  [4;35;1mHora Load (0.1ms)[0m   [0mSELECT * FROM `horas` ORDER BY date[0m
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-10 21:44:18', '2010-08-10 21:44:18', 'user', '123')[0m
+  [4;35;1mSQL (153.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-10 21:45:06', '2010-08-10 21:45:06', 'user', '123')[0m
+  [4;35;1mSQL (98.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mHora Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `horas`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mHora Create (0.3ms)[0m   [0;1mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKIN', '2010-08-10 21:45:06', '2010-08-10 21:45:06', '2010-01-01 08:00:00', 2)[0m
+  [4;35;1mSQL (104.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHora Create (0.4ms)[0m   [0mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKOUT', '2010-08-10 21:45:06', '2010-08-10 21:45:06', '2010-01-01 12:00:00', 2)[0m
+  [4;36;1mSQL (105.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mHora Create (0.4ms)[0m   [0;1mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKIN', '2010-08-10 21:45:06', '2010-08-10 21:45:06', '2010-01-01 13:00:00', 2)[0m
+  [4;35;1mSQL (111.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHora Create (0.5ms)[0m   [0mINSERT INTO `horas` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`) VALUES('CHECKOUT', '2010-08-10 21:45:07', '2010-08-10 21:45:07', '2010-01-01 18:00:00', 2)[0m
+  [4;36;1mSQL (91.2ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:45:09) [GET]
+  [4;36;1mHora Load (0.7ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/relatorio_horas_controller.rb:16:in `obter_semana'
+  app/controllers/relatorio_horas_controller.rb:8:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:45:16) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/relatorio_horas_controller.rb:16:in `obter_semana'
+  app/controllers/relatorio_horas_controller.rb:8:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:45:16) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/relatorio_horas_controller.rb:16:in `obter_semana'
+  app/controllers/relatorio_horas_controller.rb:8:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:46:28) [GET]
+  [4;36;1mHora Load (0.2ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/relatorio_horas_controller.rb:16:in `obter_semana'
+  app/controllers/relatorio_horas_controller.rb:8:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:47:49) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (undefined method `dias' for #<Hash:0xb707f9d8>):
+  app/controllers/relatorio_horas_controller.rb:25:in `obter_dia'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:48:13) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/relatorio_horas_controller.rb:25:in `obter_dia'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:48:31) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NameError (undefined local variable or method `semanas' for #<RelatorioHorasController:0xb6ef4dc0>):
+  app/controllers/relatorio_horas_controller.rb:28:in `obter_dia'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:48:58) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=):
+  app/controllers/relatorio_horas_controller.rb:28:in `obter_dia'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:51:12) [GET]
+  [4;36;1mHora Load (0.2ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (undefined method `[]=' for Fri, 01 Jan 2010:Date):
+  app/controllers/relatorio_horas_controller.rb:35:in `colocar_hora'
+  app/controllers/relatorio_horas_controller.rb:11:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:52:41) [GET]
+  [4;36;1mHora Load (0.2ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+
+NoMethodError (undefined method `[]=' for Fri, 01 Jan 2010:Date):
+  app/controllers/relatorio_horas_controller.rb:35:in `colocar_hora'
+  app/controllers/relatorio_horas_controller.rb:11:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:5:in `each'
+  app/controllers/relatorio_horas_controller.rb:5:in `visualizar'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:53:27) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 1, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:54:39) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:54:56) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:55:27) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:56:44) [GET]
+  [4;36;1mHora Load (3.2ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 36ms (View: 2, DB: 4) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:56:45) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:57:18) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 18:57:19) [GET]
+  [4;36;1mHora Load (0.1ms)[0m   [0;1mSELECT * FROM `horas` ORDER BY date[0m
+  [4;35;1mHora Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `horas`[0m
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/relatorio_horas/visualizar]
