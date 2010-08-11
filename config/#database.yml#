@@ -21,7 +21,7 @@ development:
   database: horafeliz_development
   pool: 5
   username: root
-  password: 123ok
+  password: 182831
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -34,7 +34,7 @@ test: &test
   database: horafeliz_test
   pool: 5
   username: root
-  password: 123ok
+  password: 182831
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -44,7 +44,7 @@ production:
   database: horafeliz_production
   pool: 5
   username: root
-  password: 123ok
+  password: 182831
   socket: /var/run/mysqld/mysqld.sock
 
 cucumber:
@@ -54,6 +54,6 @@ cucumber:
   database: horafeliz_cucumber
   pool: 5
   username: root
-  password: 123ok
+  password: 182831
   socket: /var/run/mysqld/mysqld.sock
 
