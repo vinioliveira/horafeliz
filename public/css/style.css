@@ -1,0 +1,251 @@
+p, h1, h2, h3, h4, h5, div.col2layout, div.form_tag p{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin: 0 0 1em  0;
+}
+
+
+div.bdy_inner_2, box.box_bdy_inner_2{
+	margin-top: .5em;
+}
+
+br{
+line-height: 70%;
+}
+
+
+h6{
+	clear:both;
+	display:block;
+	padding:0;
+	margin: 0 auto;
+	width: 770px;
+	height: 15px;
+	text-align: center;
+	font-size: 10px;
+	position: relative;
+	overflow:hidden;
+}
+
+hr{
+	clear:both;
+	border: 0;
+	padding:0;
+	background: #333;
+	color: #333;
+	height: 1px;
+}
+
+
+
+div#container {
+width:770px;
+margin:0 auto;
+}
+
+div#header {
+position:relative;
+}
+
+input.textbox {
+width:300px;
+vertical-align:middle!important;
+padding:4px;
+}
+
+div.content_body_inner_2 {
+padding-bottom:6px;
+}
+
+
+label {
+font-weight:700;
+vertical-align:middle;
+}
+
+html,body{margin:0;padding:0}
+
+body{
+	font-size: 62.5%;
+	color: #564439;
+	background: #4d3c32;
+}
+.textbox input, textarea{
+	color: #564439 !important;
+	font-size: 100%;
+}
+
+a{color: #e1972b; }
+
+a:hover{color: #564439;}
+
+div.content_headers h4{color: #e1972b; margin-top: 7px;}
+
+div.content_headers{
+	margin-bottom: 15px;
+}
+
+div#inner_body{
+	font-size: 1.5em;
+	font-family: Arial, sans-serif;
+	background: url(/layouts/doodlekit5/style/../images/footer.jpg) bottom center no-repeat;
+	float:left;
+	width: 100%;
+}
+
+img{border:0;}
+
+div#header{
+ width: 100%;
+ height: 177px;
+ background: url(images/header_bg.jpg) top left repeat-x;
+}
+
+div#header_inner_1{
+ width: 100%;
+ height: 177px;
+ background: url(images/header2.jpg) top center no-repeat;
+}
+
+div#header_inner_2{
+	 height: 177px;
+	 width: 770px;
+	 margin: 0 auto;
+	 position: relative;
+}
+
+div#header_inner_2 img{
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+div#header_inner_2 a#prices strong{
+	visibility: hidden;
+}
+
+div#header_inner_2 a#prices{
+	 background: url(/layouts/doodlekit5/style/../images/prices_plans_2.gif) top left no-repeat;
+	 height: 82px;
+	 width: 279px;
+	 position: absolute;
+	 bottom: 0px;
+	 left: 54px;
+	 text-decoration: none;
+}
+
+div#header_inner_2 a#prices:hover{
+	 background: url(/layouts/doodlekit5/style/../images/prices_plans_2.gif) top right no-repeat;
+}
+
+
+div#title{
+ width: 100%;
+ background: #4b392f;
+ float:left;
+ border-top: 3px solid #362921;
+ border-bottom: 3px solid #362921;
+}
+
+div#title_img{
+	height: 12px;
+	width: 80px;
+	background: url(/layouts/doodlekit5/style/../images/elbow.gif) top right no-repeat;
+	position: absolute;
+	top:-3px;
+	left: 423px;
+	z-index: 5;
+}
+
+div#title_inner_1{
+	width: 770px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	position: relative;
+}
+div#title_inner_2{
+	padding: 8px 0;
+	 float:left;
+	 width: 770px;
+}
+
+div#title h1, div#title ul li{
+	font-size: 18px;
+	font-weight: normal;
+	color: #a19787;
+	float:left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+div#title h1{margin-left: 5px!important;}
+
+div#title ul {
+list-style: none;
+padding:0;
+margin:0;
+}
+
+div#title ul li{
+	margin:0;
+	padding:0;
+	padding-left: 21px;
+	margin-left: 15px;
+	background: url(/layouts/doodlekit5/style/../images/bullet2.gif) center left no-repeat;
+}
+
+
+h1{
+	font-size: 20px;
+	font-weight: bold;
+	color: #dad6c2;
+	float:left;
+	padding:0!important;
+	margin:0!important;
+}
+
+div#container{
+	width: 100%;
+	height : 300px;
+	float:left;
+	background: #fff;
+}
+
+.box_title_text{
+	color: #fff;
+	line-height: 120%;
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight:bold;
+}
+
+
+h3.header3{
+	color: #e1972b;
+}
+
+h3.underlineh3{
+	display:block;
+	background: url(/layouts/doodlekit5/style/../images/h3u.gif) top left no-repeat;
+	padding-bottom: 10px !important;
+	margin-top: -10px;
+}
+
+ul.dk_ul{
+	margin-bottom: 0;
+}
+
+ul.dk_ul li{
+	margin-bottom: 5px;
+}
+
+label{
+	font-weight: bold !important;
+	color: #564439;
+}
+
+.textbox input, textarea{
+	border: 2px solid #332319 !important;
+	padding: 6px !important;
+}
+
