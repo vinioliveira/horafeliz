@@ -39,17 +39,26 @@ When /^o usuario "([^"]*)" acessa o seu relatorio de horas$/ do |arg1|
 end
 
 Then /^ele visualiza as suas horas com apenas o dia "([^"]*)"$/ do |arg1|
-  response.should have_selector("#horas") do |total|
-          total.should have_selector ("#atividades_total")
-    total.should contain(arg1)
-  end
+
+  response.should have_selector("table.semana", :count => 1)
+    response.should have_selector("table.semana") do |semana|
+      semana.should have_selector("td#dia",:count => 1)
+      semana.should have_selector("td#dia",:content => arg1)
+    end
 end
 
 Then /^com "([^"]*)" horas para o intervalo de "([^"]*)" a "([^"]*)"$/ do |arg1, arg2, arg3|
-  pending # express the regexp above with the code you wish you had
+  response.should have_selector("tr#intervalo") do |tr|
+    tr.should have_selector("td#checkin",:content => arg2)
+    tr.should have_selector("td#checkout",:content => arg3)
+    tr.should have_selector("span#total_hora",:content => arg1)
+  end
+
 end
 
 Then /^com o total de horas para o dia e para a semana de "([^"]*)" horas$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+  response.should have_selector("tr#intervalo") do |tr|
+    tr.should have_selector("td#total_dia",:content => arg1)
+  end
 end
 
