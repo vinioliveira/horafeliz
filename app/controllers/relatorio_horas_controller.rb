@@ -24,17 +24,18 @@ class RelatorioHorasController < ApplicationController
   def obter_dia semana, dia
     diaHash = semana[:dias][dia.to_s]
     if diaHash == nil
-      diaHash = { :dia => dia, :horas => {}}
-      semana[dia.to_s] = diaHash
+      diaHash = { :dia => dia}
+      semana[:dias][dia.to_s] = diaHash
     end
     diaHash
   end
 
   def colocar_hora dia, hora
+    horas = hora.date.to_time
     if hora.tipo == "CHECKIN"
-      dia[:checkin] = hora
+        dia[horas.strftime(fmt='%T')] = {:tipo =>"CHECKIN", :hora => horas.strftime(fmt='%T')}
     elsif hora.tipo == "CHECKOUT"
-      dia[:checkout] = hora
+        dia[horas.strftime(fmt='%T')] = {:tipo =>"CHECKOUT", :hora => horas.strftime(fmt='%T')}
     end
     dia
   end
