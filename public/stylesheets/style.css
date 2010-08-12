@@ -1,66 +1,39 @@
 p, h1, h2, h3, h4, h5, div.col2layout, div.form_tag p{
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+	padding-top: 0 ;
+	padding-bottom: 0 ;
 	margin: 0 0 1em  0;
 }
 
 
-div.bdy_inner_2, box.box_bdy_inner_2{
-	margin-top: .5em;
-}
 
 br{
-line-height: 70%;
+    line-height: 70%;
 }
-
-
-h6{
-	clear:both;
-	display:block;
-	padding:0;
-	margin: 0 auto;
-	width: 770px;
-	height: 15px;
-	text-align: center;
-	font-size: 10px;
-	position: relative;
-	overflow:hidden;
-}
-
-hr{
-	clear:both;
-	border: 0;
-	padding:0;
-	background: #333;
-	color: #333;
-	height: 1px;
-}
-
 
 
 div#container {
-width:770px;
-margin:0 auto;
+    width:770px;
+    margin:0 auto;
 }
 
 div#header {
-position:relative;
+    position:relative;
 }
 
 input.textbox {
-width:300px;
-vertical-align:middle!important;
-padding:4px;
+    width:300px;
+    vertical-align:middle!important;
+    padding:4px;
 }
 
 div.content_body_inner_2 {
-padding-bottom:6px;
+    padding-bottom:6px;
 }
 
 
 label {
-font-weight:700;
-vertical-align:middle;
+    font-weight:700;
+    vertical-align:middle;
 }
 
 html,body{margin:0;padding:0}
@@ -75,9 +48,11 @@ body{
 	font-size: 100%;
 }
 
-a{color: #e1972b; }
+a{ text-decoration: none;
+    color: #e1972b;
+}
 
-a:hover{color: #564439;}
+a:hover{color: #ffffff;}
 
 div.content_headers h4{color: #e1972b; margin-top: 7px;}
 
@@ -125,11 +100,11 @@ div#header_inner_2 a#prices strong{
 
 
 div#title{
- width: 100%;
- background: #4b392f;
- float:left;
- border-top: 3px solid #362921;
- border-bottom: 3px solid #362921;
+     width: 100%;
+     background: #4b392f;
+     float:left;
+     border-top: 3px solid #362921;
+     border-bottom: 3px solid #362921;
 }
 
 
@@ -141,7 +116,7 @@ div#title_inner_1{
 	position: relative;
 }
 div#title_inner_2{
-	padding: 8px 0;
+	 padding: 8px 0;
 	 float:left;
 	 width: 770px;
 }
@@ -156,9 +131,9 @@ div#title h1, div#title ul li{
 div#title h1{margin-left: 5px!important;}
 
 div#title ul {
-list-style: none;
-padding:0;
-margin:0;
+    list-style: none;
+    padding:0;
+    margin:0;
 }
 
 div#title ul li{
@@ -166,7 +141,6 @@ div#title ul li{
 	padding:0;
 	padding-left: 21px;
 	margin-left: 15px;
-	
 }
 
 
