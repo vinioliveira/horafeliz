@@ -88,7 +88,6 @@ div.content_headers{
 div#inner_body{
 	font-size: 1.5em;
 	font-family: Arial, sans-serif;
-	background: url(/layouts/doodlekit5/style/../images/footer.jpg) bottom center no-repeat;
 	float:left;
 	width: 100%;
 }
@@ -124,20 +123,6 @@ div#header_inner_2 a#prices strong{
 	visibility: hidden;
 }
 
-div#header_inner_2 a#prices{
-	 background: url(/layouts/doodlekit5/style/../images/prices_plans_2.gif) top left no-repeat;
-	 height: 82px;
-	 width: 279px;
-	 position: absolute;
-	 bottom: 0px;
-	 left: 54px;
-	 text-decoration: none;
-}
-
-div#header_inner_2 a#prices:hover{
-	 background: url(/layouts/doodlekit5/style/../images/prices_plans_2.gif) top right no-repeat;
-}
-
 
 div#title{
  width: 100%;
@@ -147,15 +132,6 @@ div#title{
  border-bottom: 3px solid #362921;
 }
 
-div#title_img{
-	height: 12px;
-	width: 80px;
-	background: url(/layouts/doodlekit5/style/../images/elbow.gif) top right no-repeat;
-	position: absolute;
-	top:-3px;
-	left: 423px;
-	z-index: 5;
-}
 
 div#title_inner_1{
 	width: 770px;
@@ -190,7 +166,7 @@ div#title ul li{
 	padding:0;
 	padding-left: 21px;
 	margin-left: 15px;
-	background: url(/layouts/doodlekit5/style/../images/bullet2.gif) center left no-repeat;
+	
 }
 
 
@@ -222,13 +198,6 @@ div#container{
 
 h3.header3{
 	color: #e1972b;
-}
-
-h3.underlineh3{
-	display:block;
-	background: url(/layouts/doodlekit5/style/../images/h3u.gif) top left no-repeat;
-	padding-bottom: 10px !important;
-	margin-top: -10px;
 }
 
 ul.dk_ul{
