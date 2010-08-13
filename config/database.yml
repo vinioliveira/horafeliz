@@ -15,38 +15,47 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
-    adapter: postgresql
-    encoding: unicode
-    database: horafeliz_developement
+    adapter: mysql 
+    encoding: utf8
+    reconnect: false
+    database: horafeliz_development
     pool: 5
-    username: postgres
-    password: progoz
+    username: root
+    password: 182831
+    socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
     adapter: postgresql
-    encoding: unicode
+    adapter: mysql 
+    encoding: utf8
+    reconnect: false
     database: horafeliz_test
     pool: 5
-    username: postgres
-    password: progoz
+    username: root
+    password: 182831
+    socket: /var/run/mysqld/mysqld.sock
 
 
 production:
-    adapter: postgresql
-    encoding: unicode
+    adapter: mysql 
+    encoding: utf8
+    reconnect: false
     database: horafeliz_production
     pool: 5
-    username: postgres
-    password: progoz
+    username: root
+    password: 182831
+    socket: /var/run/mysqld/mysqld.sock
 
 cucumber:
-    adapter: postgresql
-    encoding: unicode
+    adapter: mysql 
+    encoding: utf8
+    reconnect: false
     database: horafeliz_cucumber
     pool: 5
-    username: postgres
-    password: progoz
+    username: root
+    password: 182831
+    socket: /var/run/mysqld/mysqld.sock
 

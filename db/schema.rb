@@ -9,14 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100809212625) do
+ActiveRecord::Schema.define(:version => 20100813011717) do
 
-  create_table "horas", :force => true do |t|
+  create_table "periodos", :force => true do |t|
     t.integer  "user_id"
     t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "tipo"
+    t.datetime "checkin"
+    t.datetime "checkout"
   end
 
   create_table "users", :force => true do |t|

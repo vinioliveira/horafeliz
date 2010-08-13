@@ -1,4 +1,4 @@
-class Hora < ActiveRecord::Base
+class Periodo < ActiveRecord::Base
 
     validates_presence_of :type, :user, :date
 

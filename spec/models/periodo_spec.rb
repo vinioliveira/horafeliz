@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Hora do
+describe Periodo do
   before(:each) do
     @valid_attributes = {
       :user => User.new, :tipo => "CHECKIN", :date => DateTime.new
@@ -8,7 +8,7 @@ describe Hora do
   end
 
   it "should create a new instance given valid attributes" do
-    Hora.create!(@valid_attributes)
+    Periodo.create!(@valid_attributes)
   end
 end
 

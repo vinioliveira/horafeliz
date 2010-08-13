@@ -868,3 +868,13 @@ Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-10 17:4
 Rendering relatorio_horas/visualizar
 Completed in 6ms (View: 3, DB: 4) | 200 OK [http://www.example.com/relatorio_horas/visualizar]
   [4;36;1mSQL (105.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mMysql::Error: Table 'horafeliz_cucumber.users' doesn't exist: SHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mMysql::Error: Table 'horafeliz_cucumber.users' doesn't exist: SHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
