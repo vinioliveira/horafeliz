@@ -24,9 +24,50 @@
   periodo.user = user
   periodo.save!
 
+  dateCheckin = DateTime.strptime("2010-01-01 19:00","%Y-%m-%d %H:%M");
+  dateCheckout = DateTime.strptime("2010-01-01 22:00","%Y-%m-%d %H:%M");
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
 
+  dateCheckin = DateTime.strptime("2010-01-02 08:00","%Y-%m-%d %H:%M");
+  dateCheckout = DateTime.strptime("2010-01-02 12:20","%Y-%m-%d %H:%M");
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
+  
+  dateCheckin = DateTime.strptime("2010-01-02 13:20","%Y-%m-%d %H:%M");
+  dateCheckout = DateTime.strptime("2010-01-02 16:30","%Y-%m-%d %H:%M");
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
 
-
+  dateCheckin = DateTime.strptime("2010-01-04 08:00","%Y-%m-%d %H:%M");
+  dateCheckout = DateTime.strptime("2010-01-04 12:00","%Y-%m-%d %H:%M");
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
+  
+  dateCheckin = DateTime.strptime("2010-01-04 13:00","%Y-%m-%d %H:%M");
+  dateCheckout = DateTime.strptime("2010-01-04 16:30","%Y-%m-%d %H:%M");
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
 
 
 

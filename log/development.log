@@ -4250,3 +4250,614 @@ Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:3
 Rendering template within layouts/application
 Rendering relatorio_horas/visualizar
 Completed in 20ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:37:53) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined method `each_wiht_index' for #<Array:0xb6b00c78>) on line #20 of app/views/relatorio_horas/visualizar.html.erb:
+17:               </thead>
+18:             <tbody>    
+19:               <% semana[:periodos].each do |chave_dias,dias| %>
+20:                 <% dias.each_wiht_index do |dia,i| %>
+21:                   <tr id="intervalo">
+22:                     <% if i == 0 %>
+23:                       <td id="dia" rolspan="<% dias.size %>" ><%= dia.date.to_s %></td>
+
+    app/views/relatorio_horas/visualizar.html.erb:20
+    app/views/relatorio_horas/visualizar.html.erb:19:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:19
+    app/views/relatorio_horas/visualizar.html.erb:6:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:6
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:38:08) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:39:17) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined method `lenght' for #<Array:0xb6b9830c>) on line #23 of app/views/relatorio_horas/visualizar.html.erb:
+20:                 <% dias.each_with_index do |dia,i| %>
+21:                   <tr id="intervalo">
+22:                     <% if i == 0 %>
+23:                       <td id="dia" rolspan="<% dias.lenght %>" ><%= dia.date.to_s %></td>
+24:                     <% end %>
+25:                     <td id="checkin"><%= dia.checkin.to_s %></td>
+26:                     <td id="checkout"><%= dia.checkout.to_s %></td>
+
+    app/views/relatorio_horas/visualizar.html.erb:23
+    app/views/relatorio_horas/visualizar.html.erb:20:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:20:in `each_with_index'
+    app/views/relatorio_horas/visualizar.html.erb:20
+    app/views/relatorio_horas/visualizar.html.erb:19:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:19
+    app/views/relatorio_horas/visualizar.html.erb:6:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:6
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:39:41) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:39:52) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 8, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:40:15) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:44:52) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:45:16) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:45:33) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:45:34) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 16ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:46:54) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:13) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:22) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:24) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:24) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:24) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:25) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 17ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:47:25) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:48:31) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:49:54) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 86ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:50:22) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:50:49) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 34ms (View: 12, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:51:08) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:52:07) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 14:52:53) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 27ms (View: 8, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:18:41) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 8, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:28:17) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+
+TypeError (can't convert Date into Integer):
+  app/controllers/relatorio_horas_controller.rb:19:in `[]'
+  app/controllers/relatorio_horas_controller.rb:19:in `obter_dias'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:6:in `each'
+  app/controllers/relatorio_horas_controller.rb:6:in `visualizar'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (19.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:30:55) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+
+TypeError (can't convert Date into Integer):
+  app/controllers/relatorio_horas_controller.rb:19:in `[]'
+  app/controllers/relatorio_horas_controller.rb:19:in `obter_dias'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:6:in `each'
+  app/controllers/relatorio_horas_controller.rb:6:in `visualizar'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (19.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:30:57) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+
+TypeError (can't convert Date into Integer):
+  app/controllers/relatorio_horas_controller.rb:19:in `[]'
+  app/controllers/relatorio_horas_controller.rb:19:in `obter_dias'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:6:in `each'
+  app/controllers/relatorio_horas_controller.rb:6:in `visualizar'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (19.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:30:58) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+
+TypeError (can't convert Date into Integer):
+  app/controllers/relatorio_horas_controller.rb:19:in `[]'
+  app/controllers/relatorio_horas_controller.rb:19:in `obter_dias'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:6:in `each'
+  app/controllers/relatorio_horas_controller.rb:6:in `visualizar'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (28.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:30:58) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+
+TypeError (can't convert Date into Integer):
+  app/controllers/relatorio_horas_controller.rb:19:in `[]'
+  app/controllers/relatorio_horas_controller.rb:19:in `obter_dias'
+  app/controllers/relatorio_horas_controller.rb:10:in `visualizar'
+  app/controllers/relatorio_horas_controller.rb:6:in `each'
+  app/controllers/relatorio_horas_controller.rb:6:in `visualizar'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:31:48) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:32:28) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 21ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:34:10) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-16 18:39:22', '2010-08-16 18:39:22', 'user', '123')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPeriodo Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `periodos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.3ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:39:22', '2010-08-16 18:39:22', '2010-01-01 08:00:00', 3, '2010-01-01 08:00:00', '2010-01-01 12:00:00')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.3ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:39:22', '2010-08-16 18:39:22', '2010-01-01 13:00:00', 3, '2010-01-01 13:00:00', '2010-01-01 18:00:00')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:39:28) [GET]
+  [4;36;1mPeriodo Load (0.4ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mCREATE TABLE `periodos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255), `checkin` datetime, `checkout` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100813011717')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100812211536')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-16 18:39:56', '2010-08-16 18:39:56', 'user', '123')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPeriodo Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.6ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:39:56', '2010-08-16 18:39:56', '2010-01-01 08:00:00', 1, '2010-01-01 08:00:00', '2010-01-01 12:00:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.4ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:39:56', '2010-08-16 18:39:56', '2010-01-01 13:00:00', 1, '2010-01-01 13:00:00', '2010-01-01 18:00:00')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.4ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:39:56', '2010-08-16 18:39:56', '2010-01-01 19:00:00', 1, '2010-01-01 19:00:00', '2010-01-01 22:00:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:40:01) [GET]
+  [4;36;1mPeriodo Load (0.5ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (26.1ms)[0m   [0mCREATE TABLE `periodos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255), `checkin` datetime, `checkout` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.9ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (15.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100813011717')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100812211536')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-16 18:41:58', '2010-08-16 18:41:58', 'user', '123')[0m
+  [4;36;1mSQL (8.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPeriodo Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.6ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:41:58', '2010-08-16 18:41:58', '2010-01-01 08:00:00', 1, '2010-01-01 08:00:00', '2010-01-01 12:00:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.4ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:41:58', '2010-08-16 18:41:58', '2010-01-01 13:00:00', 1, '2010-01-01 13:00:00', '2010-01-01 18:00:00')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.4ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:41:58', '2010-08-16 18:41:58', '2010-01-01 19:00:00', 1, '2010-01-01 19:00:00', '2010-01-01 22:00:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.4ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:41:58', '2010-08-16 18:41:58', '2010-01-02 08:00:00', 1, '2010-01-02 08:00:00', '2010-01-02 12:20:00')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.6ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:41:58', '2010-08-16 18:41:58', '2010-01-02 13:20:00', 1, '2010-01-02 13:20:00', '2010-01-02 16:30:00')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:42:01) [GET]
+  [4;36;1mPeriodo Load (0.6ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (26.4ms)[0m   [0mCREATE TABLE `periodos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255), `checkin` datetime, `checkout` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `senha` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (9.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100813011717')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809203304')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100812211536')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`created_at`, `updated_at`, `login`, `senha`) VALUES('2010-08-16 18:45:30', '2010-08-16 18:45:30', 'user', '123')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPeriodo Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.6ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-01 08:00:00', 1, '2010-01-01 08:00:00', '2010-01-01 12:00:00')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.5ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-01 13:00:00', 1, '2010-01-01 13:00:00', '2010-01-01 18:00:00')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.5ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-01 19:00:00', 1, '2010-01-01 19:00:00', '2010-01-01 22:00:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.4ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-02 08:00:00', 1, '2010-01-02 08:00:00', '2010-01-02 12:20:00')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.4ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-02 13:20:00', 1, '2010-01-02 13:20:00', '2010-01-02 16:30:00')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPeriodo Create (0.4ms)[0m   [0;1mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-04 08:00:00', 1, '2010-01-04 08:00:00', '2010-01-04 12:00:00')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.4ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-08-16 18:45:30', '2010-08-16 18:45:30', '2010-01-04 13:00:00', 1, '2010-01-04 13:00:00', '2010-01-04 16:30:00')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-16 15:45:32) [GET]
+  [4;36;1mPeriodo Load (0.4ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 4, DB: 1) | 200 OK [http://localhost/]

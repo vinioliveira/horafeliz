@@ -3,7 +3,7 @@
 <%= stylesheet_link_tag "style_table_sorter.css" %>
 
 <div id="horas">
-    <% @semanas.each do |chave,semana| %>
+  <% @semanas.each do |chave,semana| %>
       <h1><%= chave %></h1>
     <table cellpadding="0" cellspacing="0" border="0"  class="tablesorter">
         <thead>   
@@ -17,15 +17,17 @@
               </thead>
             <tbody>    
               <% semana[:periodos].each do |chave_dias,dias| %>
-                <% dias.each do |dia| %>
-                <tr id="intervalo">
-                    <td id="dia"><%= dia.date.to_s %></td>
-                    
-                    <td id="checkin"><%= dia.checkin.to_s %></td>
-                    <td id="checkout"><%= dia.checkout.to_s %></td>
-                    
-                    <td id="total"><span id="total_hora"><%= dia.total_horas %></span></td>
-                    <td id="total_dia">9</td>
+                <% dias.each_with_index do |dia,i| %>
+                  <tr id="intervalo">
+                    <% if i == 0 %>
+                      <td id="dia" rowspan="<%= dias.size %>" ><%= dia.date.to_date %></td>
+                    <% end %>
+                    <td id="checkin"><%= dia.checkin.strftime(fmt='%T') %></td>
+                    <td id="checkout"><%= dia.checkout.strftime(fmt='%T') %></td>
+                     <td id="total"><span id="total_hora"><%= dia.total_horas %></span></td>
+                    <% if i == 0 %>
+                      <td id="total_dia" rowspan="<%= dias.size %>"><%= @totais_de_horas_no_dia[dia.date.to_date] %></td>
+                    <% end %>
                   </tr>
                 <% end %>
               <% end %>

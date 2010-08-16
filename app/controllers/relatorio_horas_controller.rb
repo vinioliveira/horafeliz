@@ -1,6 +1,7 @@
 class RelatorioHorasController < ApplicationController
   def visualizar
     @horas = Periodo.find (:all, :order =>'date')
+    @totais_de_horas_no_dia = {};
     @semanas = {}
     @horas.each do |hora|
       data_inicio = hora.date.at_beginning_of_week;
@@ -15,6 +16,10 @@ class RelatorioHorasController < ApplicationController
        periodo[hora.date.to_date] = []
     end
     periodo[hora.date.to_date].push hora
+    if(@totais_de_horas_no_dia[hora.date.to_date] == nil)
+      @totais_de_horas_no_dia[hora.date.to_date] = 0
+    end
+    @totais_de_horas_no_dia[hora.date.to_date] += hora.total_horas
   end
 
   def obter_semana data_inicio, data_fim
