@@ -5,8 +5,8 @@ class Periodo < ActiveRecord::Base
     belongs_to :user
 
     def total_horas
-      diferenca = checkout.hour - checkin.hour  
-      return diferenca;
+      diferenca = checkout - checkin  
+      return diferenca / 3600;
     end
 
 end
