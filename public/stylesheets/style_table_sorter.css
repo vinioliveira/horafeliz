@@ -8,10 +8,11 @@ table.tablesorter {
 	text-align: left;
 }
 table.tablesorter thead tr th, table.tablesorter tfoot tr th {
-	background-color: #e6EEEE;
+	background-color: #564439;
 	border: 1px solid #FFF;
 	font-size: 8pt;
 	padding: 4px;
+        color: #E1972B;
 }
 table.tablesorter thead tr .header {
 	background-image: url(../images/bg.gif);

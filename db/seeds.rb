@@ -8,21 +8,21 @@
   user = User.create!(:login => 'user',:senha => "123")
   dateCheckin = DateTime.strptime("2010-01-01 08:00","%Y-%m-%d %H:%M");
   dateCheckout = DateTime.strptime("2010-01-01 12:00","%Y-%m-%d %H:%M"); 
-  hora = Periodo.new
-  hora.date = dateCheckin
-  hora.checkin = dateCheckin
-  hora.checkout = dateCheckout
-  hora.user = user
-  hora.save!
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
 
   dateCheckin = DateTime.strptime("2010-01-01 13:00","%Y-%m-%d %H:%M");
   dateCheckout = DateTime.strptime("2010-01-01 18:00","%Y-%m-%d %H:%M");
-  hora = Periodo.new
-  hora.date = dateCheckin
-  hora.checkin = dateCheckin
-  hora.checkout = dateCheckout
-  hora.user = user
-  hora.save!
+  periodo = Periodo.new
+  periodo.date = dateCheckin
+  periodo.checkin = dateCheckin
+  periodo.checkout = dateCheckout
+  periodo.user = user
+  periodo.save!
 
 
 

@@ -2523,3 +2523,930 @@ Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-12 22:3
 Rendering template within layouts/application
 Rendering relatorio_horas/visualizar
 Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (24.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:18:28) [GET]
+  [4;36;1mPeriodo Load (106.9ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 289ms (View: 95, DB: 136) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:21:52) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:21:56) [GET]
+  [4;36;1mPeriodo Load (0.4ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 26ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:23:15) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:24:03) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 3, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:28:58) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:31:01) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:31:45) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 19ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:32:07) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:47:09) [GET]
+  [4;36;1mPeriodo Load (1.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 20ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:51:19) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:54:31) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 88ms (View: 77, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:55:04) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:55:20) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined method `-' for "2010-01-01 12:00:00 UTC":String) on line #28 of app/views/relatorio_horas/visualizar.html.erb:
+25:       <tr id="intervalo">
+26:         <td id="dia"><%= periodo.date.to_s %></td>
+27:         
+28:         <td id="checkin"><%= periodo.checkout.to_s -  periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_time %></td>
+30:         
+31:         <td id="total"><span id="total_hora">4</span></td>
+
+    app/views/relatorio_horas/visualizar.html.erb:28
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.9ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 17:55:32) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:46:16) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined method `-' for :checkout:Symbol) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:8:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (24.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:46:54) [GET]
+  [4;36;1mPeriodo Load (0.1ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined local variable or method `diff' for #<Periodo:0xb6adf410>) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:47:21) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:47:55) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 88ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:48:09) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:48:32) [GET]
+  [4;36;1mPeriodo Load (0.1ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:50:26) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined local variable or method `year' for #<Periodo:0xb6b10d6c>) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:50:51) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:51:33) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:51:51) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined local variable or method `frac' for #<Periodo:0xb6b45c10>) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:13:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (24.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:52:20) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:53:10) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (uninitialized constant Periodo::Datetime) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:8:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:53:30) [GET]
+  [4;36;1mPeriodo Load (0.8ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (uninitialized constant Periodo::Datetime) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:53:45) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (uninitialized constant Periodo::Datetime) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:53:45) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (uninitialized constant Periodo::Datetime) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:54:02) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (uninitialized constant Periodo::Datetime) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:54:28) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (uninitialized constant Periodo::Datetime) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:9:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (24.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:54:51) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:55:20) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:55:21) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 16ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:55:54) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 4, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:56:52) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 18:57:33) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:01:30) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:02:03) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:02:50) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:03:20) [GET]
+  [4;36;1mPeriodo Load (0.1ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:04:55) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:05:47) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:05:54) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:06:01) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:07:33) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 35ms (View: 17, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:07:33) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 16ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:11:34) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/models/periodo.rb:8:in `debugger'
+    app/models/periodo.rb:8:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (25.7ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:12:17) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/periodo.rb:11:in `debugger'
+  app/models/periodo.rb:11
+  app/controllers/relatorio_horas_controller.rb:3:in `visualizar'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (22.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:12:33) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    app/views/relatorio_horas/visualizar.html.erb:31:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (99.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:13:59) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:17:17) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 35ms (View: 16, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:21:34) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+
+ActionView::TemplateError (undefined method `/' for Fri Jan 01 11:59:59 UTC 2010:Time) on line #31 of app/views/relatorio_horas/visualizar.html.erb:
+28:         <td id="checkin"><%= periodo.checkin.to_s %></td>
+29:         <td id="checkout"><%= periodo.checkout.to_s %></td>
+30:         
+31:         <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
+32:         <td id="total_dia">9</td>
+33:       </tr>
+34:     <% end %>
+
+    /usr/local/lib/ruby/1.8/date.rb:401:in `civil_to_jd'
+    /usr/local/lib/ruby/1.8/date.rb:632:in `valid_civil?'
+    /usr/local/lib/ruby/1.8/date.rb:1520:in `new'
+    app/models/periodo.rb:8:in `total_horas'
+    app/views/relatorio_horas/visualizar.html.erb:31
+    app/views/relatorio_horas/visualizar.html.erb:24:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:24
+    app/views/relatorio_horas/visualizar.html.erb:9:in `each'
+    app/views/relatorio_horas/visualizar.html.erb:9
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (26.6ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:22:26) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:27:09) [GET]
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 28ms (View: 6, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 19:27:23) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 83ms (View: 73, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 22:22:33) [GET]
+  [4;36;1mPeriodo Load (18.4ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 181ms (View: 101, DB: 23) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-15 22:23:00) [GET]
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 14ms (View: 3, DB: 2) | 200 OK [http://localhost/]

@@ -1,5 +1,3 @@
-<h1>RelatorioHoras#visualizar</h1>
-
 <%= javascript_include_tag "jquery-1.4.2" %> 
 <%= javascript_include_tag "jquery.tablesorter.js" %> 
 <%= stylesheet_link_tag "style_table_sorter.css" %>
@@ -30,7 +28,7 @@
         <td id="checkin"><%= periodo.checkin.to_s %></td>
         <td id="checkout"><%= periodo.checkout.to_s %></td>
         
-        <td id="total"><span id="total_hora">4</span></td>
+        <td id="total"><span id="total_hora"><%= periodo.total_horas %></span></td>
         <td id="total_dia">9</td>
       </tr>
     <% end %>
