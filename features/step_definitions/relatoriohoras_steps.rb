@@ -9,29 +9,21 @@ Given /^ele tem registrado as horas para o dia "([^"]*)" com entrada "([^"]*)" e
 
   dateCheckin = DateTime.strptime("#{arg1} #{arg2}","%Y-%m-%d %H:%M");
   dateCheckout = DateTime.strptime("#{arg1} #{arg3}","%Y-%m-%d %H:%M");
-  hora = Hora.new
-  hora.tipo = "CHECKIN"
+  hora = Periodo.new
   hora.date = dateCheckin
+  hora.checkin = dateCheckin
+  hora.checkout = dateCheckout
   hora.user = @user
   hora.save!
-  horaSaida = Hora.new
-  horaSaida.tipo = "CHECKOUT"
-  horaSaida.date = dateCheckout
-  horaSaida.user = @user
-  horaSaida.save!
-
+ 
   dateCheckin = DateTime.strptime("#{arg1} #{arg4}","%Y-%m-%d %H:%M");
   dateCheckout = DateTime.strptime("#{arg1} #{arg5}","%Y-%m-%d %H:%M");
-  hora = Hora.new
-  hora.tipo = "CHECKIN"
+  hora = Periodo.new
   hora.date = dateCheckin
+  hora.checkin = dateCheckin
+  hora.checkout = dateCheckout
   hora.user = @user
   hora.save!
-  horaSaida = Hora.new
-  horaSaida.tipo = "CHECKOUT"
-  horaSaida.date = dateCheckout
-  horaSaida.user = @user
-  horaSaida.save!
 end
 
 When /^o usuario "([^"]*)" acessa o seu relatorio de horas$/ do |arg1|
@@ -40,8 +32,8 @@ end
 
 Then /^ele visualiza as suas horas com apenas o dia "([^"]*)"$/ do |arg1|
 
-  response.should have_selector("table.semana", :count => 1)
-    response.should have_selector("table.semana") do |semana|
+  response.should have_selector("#semana", :count => 1)
+    response.should have_selector("#semana") do |semana|
       semana.should have_selector("td#dia",:count => 1)
       semana.should have_selector("td#dia",:content => arg1)
     end
