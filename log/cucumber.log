@@ -2718,3 +2718,478 @@ Rendering template within layouts/application
 Rendering relatorio_horas/visualizar
 Completed in 8ms (View: 3, DB: 0) | 200 OK [http://www.example.com/relatorio_horas/visualizar]
   [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "users" does not exist
+LINE 4: WHERE a.attrelid = '"users"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (19.7ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (11.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20100809203304)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (20.6ms)[0m   [0mCREATE TABLE "users" ("id" serial primary key, "login" character varying(255), "senha" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100809203304')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Migrating to CreateHoras (20100809210449)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (9.6ms)[0m   [0mCREATE TABLE "horas" ("id" serial primary key, "type" character varying(255), "user_id" integer, "date" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100809210449')[0m
+  [4;35;1mSQL (17.5ms)[0m   [0mCOMMIT[0m
+Migrating to ChangeTypeFieldHora (20100809212625)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (14.9ms)[0m   [0mALTER TABLE "horas" ADD COLUMN "tipo" character varying(255)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mALTER TABLE "horas" DROP "type"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100809212625')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+Migrating to ChangeHoraToPeriodo (20100812211536)
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mALTER TABLE "horas" ADD COLUMN "checkin" date[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mALTER TABLE "horas" ADD COLUMN "checkout" date[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mALTER TABLE "horas" RENAME TO "periodos"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100812211536')[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mCOMMIT[0m
+Migrating to ChanceTypeCheckinCheckoutForDatetime (20100813011717)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mALTER TABLE "periodos" ALTER COLUMN "checkin" TYPE timestamp[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mALTER TABLE "periodos" ALTER COLUMN "checkout" TYPE timestamp[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100813011717')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "login", "senha") VALUES('2010-08-31 19:21:57.004488', '2010-08-31 19:21:57.004488', 'horafeliz', '123') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-08-31 19:21:57.059340', '2010-08-31 19:21:57.059340', '2010-01-01 08:00:00.000000', 1, '2010-01-01 08:00:00.000000', '2010-01-01 12:00:00.000000') RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-08-31 19:21:57.077837', '2010-08-31 19:21:57.077837', '2010-01-01 13:00:00.000000', 1, '2010-01-01 13:00:00.000000', '2010-01-01 18:00:00.000000') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/relatorio_horas/visualizar with {} and HTTP headers {}
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-31 16:21:57) [GET]
+  [4;35;1mPeriodo Load (0.9ms)[0m   [0mSELECT * FROM "periodos" ORDER BY date[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 89ms (View: 81, DB: 4) | 200 OK [http://www.example.com/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "login", "senha") VALUES('2010-08-31 19:21:57.273127', '2010-08-31 19:21:57.273127', 'horafeliz', '123') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-08-31 19:21:57.278694', '2010-08-31 19:21:57.278694', '2010-08-16 08:00:00.000000', 2, '2010-08-16 08:00:00.000000', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/registrar_periodo/checkin with {} and HTTP headers {}
+
+
+Processing RegistrarPeriodoController#checkin (for 127.0.0.1 at 2010-08-31 16:21:57) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-08-31 19:21:57.293155', '2010-08-31 19:21:57.293155', '2010-08-31 19:21:57.290582', 2, '2010-08-31 19:21:57.290582', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/relatorio_horas/visualizar
+Completed in 8ms (DB: 3) | 302 Found [http://www.example.com/registrar_periodo/checkin]
+REQUESTING PAGE: GET http://www.example.com/relatorio_horas/visualizar with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/registrar_periodo/checkin"}
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-08-31 16:21:57) [GET]
+  [4;36;1mPeriodo Load (0.4ms)[0m   [0;1mSELECT * FROM "periodos" ORDER BY date[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://www.example.com/relatorio_horas/visualizar]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "login", "senha") VALUES('2010-09-05 02:08:50.365302', '2010-09-05 02:08:50.365302', 'horafeliz', '123') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERRO: relação "periodos" não existe
+LINE 4: WHERE a.attrelid = '"periodos"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"periodos"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "login", "senha") VALUES('2010-09-05 02:08:50.399565', '2010-09-05 02:08:50.399565', 'horafeliz', '123') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERRO: relação "periodos" não existe
+LINE 4: WHERE a.attrelid = '"periodos"'::regclass
+ ^
+: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"periodos"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (153.3ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (25.8ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHoras (20100809210449)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (121.5ms)[0m   [0mCREATE TABLE "horas" ("id" serial primary key, "type" character varying(255), "user_id" integer, "date" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100809210449')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCOMMIT[0m
+Migrating to ChangeTypeFieldHora (20100809212625)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mALTER TABLE "horas" ADD COLUMN "tipo" character varying(255)[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mALTER TABLE "horas" DROP "type"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100809212625')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Migrating to ChangeHoraToPeriodo (20100812211536)
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mALTER TABLE "horas" ADD COLUMN "checkin" date[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "horas" ADD COLUMN "checkout" date[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mALTER TABLE "horas" RENAME TO "periodos"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100812211536')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Migrating to ChanceTypeCheckinCheckoutForDatetime (20100813011717)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (25.3ms)[0m   [0;1mALTER TABLE "periodos" ALTER COLUMN "checkin" TYPE timestamp[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mALTER TABLE "periodos" ALTER COLUMN "checkout" TYPE timestamp[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100813011717')[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCOMMIT[0m
+Migrating to DeviseCreateUsers (20100905052138)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (26.8ms)[0m   [0mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(128) DEFAULT '' NOT NULL, "password_salt" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "remember_token" character varying(255), "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100905052138')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+Migrating to AddLoginToUsers (20100905223412)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mALTER TABLE "users" ADD COLUMN "login" character varying(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100905223412')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (15.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'horafeliz@horafeliz.com.br') LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'horafeliz@horafeliz.com.br') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (3.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'horafeliz@horafeliz.com.br') LIMIT 1[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "login", "email") VALUES('99beee69729d01a9185c668d8fe8b8251984a1d3', '2010-09-05 22:48:56.303350', NULL, '2010-09-05 22:48:56.303350', NULL, 0, 'y-tV1zWGjtqDSeBeSjnU', NULL, NULL, NULL, NULL, NULL, 'horafeliz', 'horafeliz@horafeliz.com.br') RETURNING "id"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-09-05 22:48:56.365810', '2010-09-05 22:48:56.365810', '2010-01-01 08:00:00.000000', 1, '2010-01-01 08:00:00.000000', '2010-01-01 12:00:00.000000') RETURNING "id"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-09-05 22:48:56.405075', '2010-09-05 22:48:56.405075', '2010-01-01 13:00:00.000000', 1, '2010-01-01 13:00:00.000000', '2010-01-01 18:00:00.000000') RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/relatorio_horas/visualizar with {} and HTTP headers {}
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-05 19:48:56) [GET]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'horafeliz@horafeliz.com.br') LIMIT 1[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "login", "email") VALUES('2e7b18d98ff32c0fb7e1726e8f4098551b9bc6c7', '2010-09-05 22:48:56.586707', NULL, '2010-09-05 22:48:56.586707', NULL, 0, 'b_E13kJMFOt-GYhPnRym', NULL, NULL, NULL, NULL, NULL, 'horafeliz', 'horafeliz@horafeliz.com.br') RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/registrar_periodo/checkin with {} and HTTP headers {}
+
+
+Processing RegistrarPeriodoController#checkin (for 127.0.0.1 at 2010-09-05 19:48:56) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (5.5ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'horafeliz@horafeliz.com.br') LIMIT 1[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "login", "email") VALUES('fedb4e75e0de45cc0d0d05c9b8916f516cdd40dd', '2010-09-05 22:54:31.194449', NULL, '2010-09-05 22:54:31.194449', NULL, 0, 'G8INzdypQkXdyi_GinnX', NULL, NULL, NULL, NULL, NULL, 'horafeliz', 'horafeliz@horafeliz.com.br') RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-09-05 22:54:31.328378', '2010-09-05 22:54:31.328378', '2010-01-01 08:00:00.000000', 3, '2010-01-01 08:00:00.000000', '2010-01-01 12:00:00.000000') RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "periodos" ("tipo", "created_at", "updated_at", "date", "user_id", "checkin", "checkout") VALUES(NULL, '2010-09-05 22:54:31.403099', '2010-09-05 22:54:31.403099', '2010-01-01 13:00:00.000000', 3, '2010-01-01 13:00:00.000000', '2010-01-01 18:00:00.000000') RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/relatorio_horas/visualizar with {} and HTTP headers {}
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-05 19:54:31) [GET]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'horafeliz@horafeliz.com.br') LIMIT 1[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "login", "email") VALUES('838711c0f4a82baa52440bd11ef9df6a8701866d', '2010-09-05 22:54:31.580566', NULL, '2010-09-05 22:54:31.580566', NULL, 0, 'h4qou25Kg9HI9Xml5c9n', NULL, NULL, NULL, NULL, NULL, 'horafeliz', 'horafeliz@horafeliz.com.br') RETURNING "id"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/registrar_periodo/checkin with {} and HTTP headers {}
+
+
+Processing RegistrarPeriodoController#checkin (for 127.0.0.1 at 2010-09-05 19:54:31) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m

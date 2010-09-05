@@ -6,6 +6,21 @@
   <%= flash[:notice] %>
 <div/>
 
+  <div> 
+    <% form_for :registrar_periodo_controle, :url => {:controller => 'registrar_periodo', :action => 'checkin'} do |form|%>
+      <% if @tipo_check.nil? %>
+        <%= form.label :checkin %>
+        <%= form.text_field :checkin %>
+        <%= submit_tag 'Checkin'%>
+      <% else %>
+        <%= form.hidden_field :periodo_id , :value => @tipo_check.id %>
+        <%= form.label :checkout %>
+        <%= form.text_field :checkout %>
+        <%= submit_tag 'Checkout'%>
+    <% end %>
+    <% end %>
+  </div>
+
 <div id="horas">
   <% @semanas.each do |chave,semana| %>
       <h1><%= chave %></h1>

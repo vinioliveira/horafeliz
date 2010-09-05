@@ -1,7 +1,8 @@
 Given /^Exista o usuario de login "([^"]*)"$/ do |arg1|
   @user = User.new()
   @user.login = arg1
-  @user.senha = "123"
+  @user.email = "horafeliz@horafeliz.com.br"
+  @user.password = "123456"
   @user.save!
 end
 

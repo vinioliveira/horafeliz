@@ -1,6 +1,9 @@
 class RelatorioHorasController < ApplicationController
+  before_filter :authenticate_user!
+
   def visualizar
-    @horas = Periodo.find (:all, :order =>'date')
+    @tipo_check = Periodo.ultimo_registro_dia.last
+    @horas = Periodo.find(:all, :order =>'date')
     @totais_de_horas_no_dia = {};
     @semanas = {}
     @horas.each do |hora|
