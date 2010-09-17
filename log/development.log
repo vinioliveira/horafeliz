@@ -10518,3 +10518,285 @@ Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-05 19:5
 Rendering template within layouts/application
 Rendering relatorio_horas/visualizar
 Completed in 135ms (View: 41, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHoras (20100809210449)
+Migrating to ChangeTypeFieldHora (20100809212625)
+Migrating to ChangeHoraToPeriodo (20100812211536)
+Migrating to ChanceTypeCheckinCheckoutForDatetime (20100813011717)
+Migrating to DeviseCreateUsers (20100905052138)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'users' already exists: CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `password_salt` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `remember_token` varchar(255), `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#index (for 127.0.0.1 at 2010-09-17 11:24:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 11:24:52) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (3.6ms)
+Completed in 84ms (View: 27, DB: 1) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-09-17 11:25:01) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"remember_me"=>"0", "password"=>"", "login"=>""}}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, login
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/users/sign_in]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-09-17 11:25:04) [GET]
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering registrations/new
+
+ActionView::TemplateError (undefined method `email' for #<User:0xb68a9394>) on line #6 of app/views/registrations/new.html.erb:
+3: <% form_for resource_name, resource, :url => registration_path(resource_name) do |f| -%>
+4:   <%= f.error_messages %>
+5:   <p><%= f.label :email %></p>
+6:   <p><%= f.text_field :email %></p>
+7: 
+8:   <p><%= f.label :password %></p>
+9:   <p><%= f.password_field :password %></p>
+
+    app/views/registrations/new.html.erb:6
+    app/views/registrations/new.html.erb:3
+    devise (1.0.8) [v] lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) [v] app/controllers/registrations_controller.rb:9:in `new'
+    warden (0.10.7) [v] lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) [v] lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) [v] lib/warden/manager.rb:34:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `periodos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `date` datetime, `created_at` datetime, `updated_at` datetime, `tipo` varchar(255), `checkin` datetime, `checkout` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.8ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `password_salt` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `remember_token` varchar(255), `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime, `login` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (10.4ms)[0m   [0mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (217.6ms)[0m   [0mCREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100905223412')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100905052138')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100812211536')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100813011717')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100809210449')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100809212625')[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mPeriodo Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#index (for 127.0.0.1 at 2010-09-17 11:25:51) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 11:25:51) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (2.6ms)
+Completed in 43ms (View: 28, DB: 2) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-09-17 11:25:56) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://localhost/users/sign_up]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-09-17 11:26:07) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"password_confirmation"=>"1", "password"=>"1", "email"=>"diego"}}
+  [4;36;1mUser Columns (7.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'diego') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (0.7ms)
+Completed in 159ms (View: 104, DB: 10) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-09-17 11:26:27) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"password_confirmation"=>"182831", "password"=>"182831", "email"=>"oliveira.bsi@gmail.com"}}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'oliveira.bsi@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `last_sign_in_ip`, `updated_at`, `last_sign_in_at`, `sign_in_count`, `password_salt`, `reset_password_token`, `remember_token`, `current_sign_in_ip`, `remember_created_at`, `current_sign_in_at`, `login`, `email`) VALUES('67782d8526501b8d4ff4a8b4b3ce04d27190cc70', '2010-09-17 14:26:27', NULL, '2010-09-17 14:26:27', NULL, 0, 'DZsvBeqAliVwZi754LkW', NULL, NULL, NULL, NULL, NULL, NULL, 'oliveira.bsi@gmail.com')[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE `users` SET `sign_in_count` = 1, `updated_at` = '2010-09-17 14:26:27', `last_sign_in_at` = '2010-09-17 14:26:27', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_at` = '2010-09-17 14:26:27', `current_sign_in_ip` = '127.0.0.1' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/relatorio_horas/
+Completed in 37ms (DB: 7) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#index (for 127.0.0.1 at 2010-09-17 11:26:27) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+ActionController::UnknownAction (No action responded to index. Actions: obter_dias, obter_semana, and visualizar):
+  warden (0.10.7) [v] lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) [v] lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) [v] lib/warden/manager.rb:34:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#index (for 127.0.0.1 at 2010-09-17 11:26:32) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+ActionController::UnknownAction (No action responded to index. Actions: obter_dias, obter_semana, and visualizar):
+  warden (0.10.7) [v] lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) [v] lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) [v] lib/warden/manager.rb:34:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 11:26:35) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPeriodo Load (0.5ms)[0m   [0;1mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;35;1mPeriodo Load (0.5ms)[0m   [0mSELECT * FROM `periodos` ORDER BY date[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 36ms (View: 17, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrarPeriodoController#checkin (for 127.0.0.1 at 2010-09-17 11:26:50) [POST]
+  Parameters: {"commit"=>"Checkin", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "registrar_periodo_controle"=>{"checkin"=>""}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPeriodo Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `periodos`[0m
+
+ArgumentError (invalid date):
+  /usr/local/lib/ruby/1.8/date.rb:1576:in `new_by_frags'
+  /usr/local/lib/ruby/1.8/date.rb:1601:in `strptime'
+  app/models/user.rb:13:in `checkin'
+  app/controllers/registrar_periodo_controller.rb:9:in `checkin'
+  warden (0.10.7) [v] lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) [v] lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) [v] lib/warden/manager.rb:34:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (24.3ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrarPeriodoController#checkin (for 127.0.0.1 at 2010-09-17 11:27:01) [POST]
+  Parameters: {"commit"=>"Checkin", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "registrar_periodo_controle"=>{"checkin"=>"10:00"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mPeriodo Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Create (0.5ms)[0m   [0mINSERT INTO `periodos` (`tipo`, `created_at`, `updated_at`, `date`, `user_id`, `checkin`, `checkout`) VALUES(NULL, '2010-09-17 14:27:01', '2010-09-17 14:27:01', '2010-09-17 00:00:00', 1, '2010-09-17 10:00:00', NULL)[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/relatorio_horas/visualizar
+Completed in 36ms (DB: 6) | 302 Found [http://localhost/registrar_periodo/checkin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 11:27:01) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mPeriodo Load (0.6ms)[0m   [0mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 46ms (View: 12, DB: 5) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrarPeriodoController#checkin (for 127.0.0.1 at 2010-09-17 11:27:15) [POST]
+  Parameters: {"commit"=>"Checkout", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "registrar_periodo_controle"=>{"periodo_id"=>"1", "checkout"=>"12:00"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPeriodo Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `periodos`[0m
+  [4;35;1mPeriodo Load (0.4ms)[0m   [0mSELECT * FROM `periodos` WHERE (`periodos`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPeriodo Update (0.5ms)[0m   [0mUPDATE `periodos` SET `updated_at` = '2010-09-17 14:27:15', `checkout` = '2010-09-17 12:00:00' WHERE `id` = 1[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/relatorio_horas/visualizar
+Completed in 31ms (DB: 7) | 302 Found [http://localhost/registrar_periodo/checkin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 11:27:15) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mPeriodo Load (0.6ms)[0m   [0mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;36;1mPeriodo Load (0.3ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 119ms (View: 96, DB: 4) | 200 OK [http://localhost/relatorio_horas/visualizar]
