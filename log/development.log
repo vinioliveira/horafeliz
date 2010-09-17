@@ -10800,3 +10800,272 @@ Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 11:2
 Rendering template within layouts/application
 Rendering relatorio_horas/visualizar
 Completed in 119ms (View: 96, DB: 4) | 200 OK [http://localhost/relatorio_horas/visualizar]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:43:07) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;35;1mPeriodo Load (0.1ms)[0m   [0mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;36;1mPeriodo Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 32ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 12:43:13) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 9ms (DB: 2) | 302 Found [http://localhost/users/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:43:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mPeriodo Load (0.2ms)[0m   [0mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;36;1mPeriodo Load (0.1ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 38ms (View: 13, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-09-17 12:43:24) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 2) | 302 Found [http://localhost/users/sign_out]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:43:24) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 12:43:24) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-09-17 12:43:28) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 28ms (View: 17, DB: 2) | 200 OK [http://localhost/users/sign_up]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-09-17 12:43:46) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"password_confirmation"=>"182831", "password"=>"182831", "login"=>"diego", "email"=>"diego.bsi@gmail.com"}}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: login
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'diego.bsi@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`encrypted_password`, `created_at`, `last_sign_in_ip`, `updated_at`, `last_sign_in_at`, `sign_in_count`, `password_salt`, `reset_password_token`, `remember_token`, `current_sign_in_ip`, `remember_created_at`, `current_sign_in_at`, `login`, `email`) VALUES('27df82feb2c1e6e29d976834b6a457d5930ea270', '2010-09-17 15:43:46', NULL, '2010-09-17 15:43:46', NULL, 0, '3Qj9FWL96Rc9tmt9Ez90', NULL, NULL, NULL, NULL, NULL, NULL, 'diego.bsi@gmail.com')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `sign_in_count` = 1, `updated_at` = '2010-09-17 15:43:46', `last_sign_in_at` = '2010-09-17 15:43:46', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_at` = '2010-09-17 15:43:46', `current_sign_in_ip` = '127.0.0.1' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 30ms (DB: 10) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:43:46) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mPeriodo Load (0.2ms)[0m   [0mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;36;1mPeriodo Load (0.1ms)[0m   [0;1mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;35;1mPeriodo Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 32ms (View: 10, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-09-17 12:43:57) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 3) | 302 Found [http://localhost/users/sign_out]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:43:57) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 12:43:57) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 22ms (View: 12, DB: 2) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-09-17 12:44:03) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"remember_me"=>"0", "password"=>"182831", "login"=>"diego"}}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'diego') LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, login
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.7ms)
+Completed in 24ms (View: 6, DB: 2) | 200 OK [http://localhost/users/sign_in]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-09-17 12:44:13) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"remember_me"=>"0", "password"=>"182831", "login"=>"diego"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'diego') LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: remember_me, login
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 26ms (View: 7, DB: 2) | 200 OK [http://localhost/users/sign_in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-09-17 12:47:14) [GET]
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:47:14) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 12:47:14) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 27ms (View: 10, DB: 5) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-09-17 12:47:22) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://localhost/users/sign_up]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-09-17 12:47:41) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"password_confirmation"=>"182831", "password"=>"182831", "login"=>"diego", "email"=>"diego@hotmail.com"}}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'diego@hotmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `last_sign_in_ip`, `updated_at`, `last_sign_in_at`, `sign_in_count`, `password_salt`, `reset_password_token`, `remember_token`, `current_sign_in_ip`, `remember_created_at`, `current_sign_in_at`, `login`, `email`) VALUES('4a7d366b6d7104fd33cfe2bb3cbab37f97a73ef9', '2010-09-17 15:47:41', NULL, '2010-09-17 15:47:41', NULL, 0, 'DwP2S3g5GrBVHUKnXMtb', NULL, NULL, NULL, NULL, NULL, 'diego', 'diego@hotmail.com')[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `sign_in_count` = 1, `updated_at` = '2010-09-17 15:47:41', `last_sign_in_at` = '2010-09-17 15:47:41', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_at` = '2010-09-17 15:47:41', `current_sign_in_ip` = '127.0.0.1' WHERE `id` = 3[0m
+  [4;35;1mSQL (22.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 51ms (DB: 29) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:47:41) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPeriodo Load (0.1ms)[0m   [0;1mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;35;1mPeriodo Load (0.1ms)[0m   [0mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;36;1mPeriodo Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 32ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-09-17 12:47:59) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/users/sign_out]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:47:59) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-09-17 12:47:59) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.7ms)
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-09-17 12:48:03) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"h+ib8FHiZDj0/9/LK/V4l/BoFi2GEnUVIek0MJ5B55U=", "user"=>{"remember_me"=>"0", "password"=>"182831", "login"=>"diego"}}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'diego') LIMIT 1[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE `users` SET `sign_in_count` = 2, `updated_at` = '2010-09-17 15:48:03', `current_sign_in_at` = '2010-09-17 15:48:03' WHERE `id` = 3[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 24ms (DB: 5) | 302 Found [http://localhost/users/sign_in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RelatorioHorasController#visualizar (for 127.0.0.1 at 2010-09-17 12:48:03) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPeriodo Load (0.2ms)[0m   [0;1mSELECT * FROM `periodos` WHERE (`periodos`.`checkout` IS NULL AND `periodos`.`date` = '2010-09-17') ORDER BY periodos.id DESC LIMIT 1[0m
+  [4;35;1mPeriodo Load (0.1ms)[0m   [0mSELECT * FROM `periodos` ORDER BY date[0m
+  [4;36;1mPeriodo Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `periodos`[0m
+Rendering template within layouts/application
+Rendering relatorio_horas/visualizar
+Completed in 32ms (View: 11, DB: 3) | 200 OK [http://localhost/]
